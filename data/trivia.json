@@ -1,0 +1,88 @@
+{
+    "trivia" :{
+        "questions" : [
+            {
+                "id": 1,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "answers": {
+                    "a": "Kerosene",
+                    "b": "Coal",
+                    "c": "Natural Gas",
+                    "d": "Electricity"
+                }
+            },
+            {
+                "id": 2,
+                "question": "The purpose of an evaporator in the refrigeration cycle is to _____.",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 3,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 4,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 5,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 6,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 7,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 8,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 9,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            },
+            {
+                "id": 10,
+                "question": "Which of these fuels is the most commonly used heating fuel?",
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
+            }
+        ]
+    }
+}

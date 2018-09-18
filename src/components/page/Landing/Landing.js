@@ -9,11 +9,16 @@ class Landing extends Component {
         }
     }
 
+    doSomething() {
+        console.log('hello Amanda');
+        // alert('hello Amanda');
+    }
+
     render() {
         return(
             <div>
                 <p>NexTech Trivia</p>
-                <Button variant="contained">
+                <Button variant="contained" onClick={this.doSomething}>
                     Start Trivia
                 </Button>
             </div>

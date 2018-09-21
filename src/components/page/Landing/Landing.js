@@ -18,9 +18,6 @@ class Landing extends Component {
         return(
             <div>
                 <p>NexTech Trivia</p>
-                <Button variant="contained" onClick={this.doSomething}>
-                    Start Trivia
-                </Button>
             </div>
         )
     }

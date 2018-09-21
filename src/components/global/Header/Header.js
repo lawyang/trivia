@@ -6,7 +6,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-
 import Landing from '../../page/Landing/Landing';
 
 function TabContainer(props) {
@@ -30,7 +29,7 @@ const styles = theme => ({
 
 class Header extends Component {
   state = {
-    value: 'home',
+    value: 'trivia',
   };
 
   handleChange = (event, value) => {
@@ -50,7 +49,7 @@ class Header extends Component {
             <Tab value="three" label="Item Three" />
           </Tabs>
         </AppBar>
-        {value === 'home' && <TabContainer><Landing /></TabContainer>}
+        {/* {value === 'home' && <TabContainer> <Landing /></TabContainer>} */}
         {value === 'two' && <TabContainer>About</TabContainer>}
         {value === 'three' && <TabContainer>Contact</TabContainer>}
       </div>

@@ -4,11 +4,25 @@ import { TRIVIA_ACTIONS } from '../../../redux/actions/triviaActions';
 import { connect } from 'react-redux';
 import data from '../../../data/trivia.json';
 import Button from '@material-ui/core/Button';
+import './trivia.css';
+import { withStyles } from '@material-ui/core/styles';
+import { compose } from 'redux';
+import Typography from '@material-ui/core/Typography';
 
 
 const mapStateToProps = state => ({
     object: state.triviaReducer.allQuestions
 })
+
+const styles = theme => ({
+    button: {
+        margin: theme.spacing.unit,
+        raised: true
+      },
+      question: {
+          
+      }
+  });
 
 class Trivia extends Component {
     constructor() {
@@ -23,20 +37,20 @@ class Trivia extends Component {
 
     componentDidMount(){
         this.filterData();
-        // this.idGenerator();
         this.updateState();
         console.log('items', this.state.items);
         console.log('questions', this.questions);
         console.log('qnumber', this.state.ques.length);
         console.log('qnumber2', this.getRndInteger(this.state.ids, this.state.length));
-        // this.checkAnswer();
     }
     
     questions = [];
 
     filterData = () => {
-        let id = this.state.ids;
-        console.log(id)
+        // let id = this.state.ids;
+        let number = this.getRndInteger(this.state.ids, this.state.length+1);
+        let id = number;
+        console.log('id:',id)
         this.questions = this.state.ques.filter(function (question) {
             return(
                 question.id === parseInt(`${id}`)
@@ -47,23 +61,6 @@ class Trivia extends Component {
     getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
-
-    // idGenerator = () => {
-    //     let arrayLength = this.state.ques.length;
-    //     for (let i = 1; i <= arrayLength; i++){
-    //         if( i <= arrayLength ){
-    //             return (i++,
-    //                 this.setState({
-    //                     ids: 2
-    //                 }),
-    //                 console.log('idGen', i, `ids:`, this.state.ids)
-    //             );
-    //         } else {
-    //             console.log('idGen', i);
-    //             return i;
-    //         }
-    //     }
-    // }
 
     updateState = () => {
         this.setState({
@@ -85,25 +82,35 @@ class Trivia extends Component {
     }
 
     render() {
+        const { classes } = this.props;
         return(
             <div>
-                <pre>{JSON.stringify(this.state.ques)}</pre>
+                <br/>
                 <div>
                     {this.state.items.map((que, index)=>{
                         return (
-                            <h3 key={index} value={que.id}>{que.question}</h3>
+                            <Typography 
+                            key={index}
+                            classes={{ root: classes.question }}
+                            variant="headline"
+                            value={que.id}>{que.question}</Typography>
                         )}
                     )}
                     {this.questions.map((item, index)=>{
                         return (
                             <div key={index}>
-                                <Button value={item.id} onClick={()=>this.checkAnswer(item.answers.a)}>{item.answers.a}</Button>
+                                <Button value={item.id} 
+                                    variant="outlined" 
+                                    color="primary" 
+                                    classes={{ root: classes.button }} 
+                                    onClick={()=>this.checkAnswer(item.answers.a)}
+                                >{item.answers.a}</Button>
                                 <br/>
-                                <Button value={item.id} onClick={()=>this.checkAnswer(item.answers.b)}>{item.answers.b}</Button>
+                                <Button value={item.id} variant="outlined" size="large" color="primary" classes={{ root: classes.button }} onClick={()=>this.checkAnswer(item.answers.b)}>{item.answers.b}</Button>
                                 <br/>
-                                <Button value={item.id} onClick={()=>this.checkAnswer(item.answers.c)}>{item.answers.c}</Button>
+                                <Button value={item.id} variant="outlined" size="large" color="primary" classes={{ root: classes.button }} onClick={()=>this.checkAnswer(item.answers.c)}>{item.answers.c}</Button>
                                 <br/>
-                                <Button value={item.id} onClick={()=>this.checkAnswer(item.answers.d)}>{item.answers.d}</Button>
+                                <Button value={item.id} variant="outlined" size="large" color="primary" classes={{ root: classes.button }} onClick={()=>this.checkAnswer(item.answers.d)}>{item.answers.d}</Button>
                             </div>
                         )}
                     )}
@@ -115,4 +122,5 @@ class Trivia extends Component {
 }
 
 
-export default connect(mapStateToProps)(Trivia);
+// export default withStyle(style), connect(mapStateToProps)(Trivia);
+export default compose(withStyles(styles),connect(mapStateToProps))(Trivia);

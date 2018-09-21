@@ -1,3 +1,0 @@
-export const TRIVIA_ACTIONS = {
-    FETCH_QUESTIONS: 'FETCH_QUESTIONS'
-}

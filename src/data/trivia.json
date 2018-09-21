@@ -31,5 +31,78 @@
             "d": "Ensure they are new"
         },
         "value": "Disconnect the power source"
+    },
+    {
+        "id": 4,
+        "question": "Poor lighting, excessive noise, and inadequate guards for moving parts are examples of _____.",
+        "answers": {
+            "a": "acceptable risks",
+            "b": "unsafe conditions",
+            "c": "unavoidable hazards",
+            "d": "unsafe acts"
+        },
+        "value": "unsafe conditions"
+    },    
+    {
+        "id": 5,
+        "question": "A system that protects workers from the release of hazardous energy while they work with machines and equipment is referred to as _____.",
+        "answers": {
+            "a": "a disconnect",
+            "b": "a barricade system",
+            "c": "lockout/tagout",
+            "d": "an energy-neutral system"
+        },
+        "value": "lockout/tagout"
+    },    
+    {
+        "id": 6,
+        "question": "Which of these is a true statement regarding safety?",
+        "answers": {
+            "a": "Safety is a learned behavior and attitude",
+            "b": "Safety consciousness comes naturally to most individuals",
+            "c": "Safety primarily depends on workers in the field",
+            "d": "Safety does not normally require training"
+        },
+        "value": "Safety is a learned behavior and attitude"
+    },    {
+        "id": 7,
+        "question": "What type of material is typically used for flue pipes on condensing furnaces?",
+        "answers": {
+            "a": "Metal",
+            "b": "PVC",
+            "c": "Wood",
+            "d": "High Density Foam"
+        },
+        "value": "PVC"
+    },    {
+        "id": 8,
+        "question": "What are some identifying components that are unique to a heat pump system?",
+        "answers": {
+            "a": "Reversing valve and accumulator",
+            "b": "Radiators in the home",
+            "c": "Compressor",
+            "d": "Outdoor coil"
+        },
+        "value": "Reversing valve and accumulator"
+    },    {
+        "id": 9,
+        "question": "The temperature at which a liquid or gas changes state is dependent upon the ______.",
+        "answers": {
+            "a": "pressure",
+            "b": "specific heat",
+            "c": "latent heat",
+            "d": "Sensible heat"
+        },
+        "value": "pressure"
+    },    {
+        "id": 10,
+        "question": "A register is __________.",
+        "answers": {
+            "a": "an outlet that discharges supply air into a room",
+            "b": "a type of duct transition",
+            "c": "a duct joint",
+            "d": "the metal duct supplying return air to the equipment "
+        },
+        "value": "an outlet that discharges supply air into a room"
     }
 ]

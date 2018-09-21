@@ -46,10 +46,6 @@ class Trivia extends Component {
     componentDidMount(){
         this.filterData();
         this.updateState();
-        console.log('items', this.state.items);
-        console.log('questions', this.questions);
-        console.log('qnumber', this.state.ques.length);
-        console.log('qnumber2', this.getRndInteger(this.state.ids, this.state.length));
     }
     
     questions = [];
@@ -77,8 +73,6 @@ class Trivia extends Component {
 
     checkAnswer = (selection) => {
         let correct = this.questions[0].value;
-        console.log('correct:', correct)
-        console.log('select:', selection)
         if(selection === correct){
             console.log('Correct');
             Swal(
@@ -97,8 +91,6 @@ class Trivia extends Component {
             )
         }
     }
-
-
 
     render() {
         const { classes } = this.props;
@@ -119,17 +111,33 @@ class Trivia extends Component {
                         return (
                             <div key={index}>
                                 <Button value={item.id} 
-                                    variant="outlined" 
-                                    color="primary" 
-                                    classes={{ root: classes.button }} 
-                                    onClick={()=>this.checkAnswer(item.answers.a)}
-                                >{item.answers.a}</Button>
+                                variant="outlined" 
+                                color="primary" 
+                                classes={{ root: classes.button }} 
+                                onClick={()=>this.checkAnswer(item.answers.a)}>{item.answers.a}</Button>
                                 <br/>
-                                <Button value={item.id} variant="outlined" size="large" color="primary" classes={{ root: classes.button }} onClick={()=>this.checkAnswer(item.answers.b)}>{item.answers.b}</Button>
+                                <Button 
+                                value={item.id} 
+                                variant="outlined" 
+                                size="large" 
+                                color="primary" 
+                                classes={{ root: classes.button }} 
+                                onClick={()=>this.checkAnswer(item.answers.b)}>{item.answers.b}</Button>
                                 <br/>
-                                <Button value={item.id} variant="outlined" size="large" color="primary" classes={{ root: classes.button }} onClick={()=>this.checkAnswer(item.answers.c)}>{item.answers.c}</Button>
+                                <Button 
+                                value={item.id} 
+                                variant="outlined" 
+                                size="large" 
+                                color="primary" 
+                                classes={{ root: classes.button }} 
+                                onClick={()=>this.checkAnswer(item.answers.c)}>{item.answers.c}</Button>
                                 <br/>
-                                <Button value={item.id} variant="outlined" size="large" color="primary" classes={{ root: classes.button }} onClick={()=>this.checkAnswer(item.answers.d)}>{item.answers.d}</Button>
+                                <Button value={item.id} 
+                                variant="outlined" 
+                                size="large" 
+                                color="primary" 
+                                classes={{ root: classes.button }} 
+                                onClick={()=>this.checkAnswer(item.answers.d)}>{item.answers.d}</Button>
                             </div>
                         )}
                     )}

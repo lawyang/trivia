@@ -8,7 +8,9 @@ import './trivia.css';
 import { withStyles } from '@material-ui/core/styles';
 import { compose } from 'redux';
 import Typography from '@material-ui/core/Typography';
-
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+import {Animated} from "react-animated-css";
 
 const mapStateToProps = state => ({
     object: state.triviaReducer.allQuestions
@@ -23,6 +25,12 @@ const styles = theme => ({
           
       }
   });
+
+  const SwalWithBootstrapButtons = Swal.mixin({
+    confirmButtonClass: 'btn btn-success',
+    cancelButtonClass: 'btn btn-danger',
+    buttonsStyling: false,
+  })
 
 class Trivia extends Component {
     constructor() {
@@ -73,12 +81,24 @@ class Trivia extends Component {
         console.log('select:', selection)
         if(selection === correct){
             console.log('Correct');
-            alert('Correct');
+            Swal(
+            'Correct',
+            'Good Job!!!',
+            'success',
+            ).then(()=>{
+                window.location.reload();
+            })
         } else {
             console.log('Wrong');
-            alert('Wrong');
+            Swal(
+                'Incorrect',
+                'Sorry Try Again',
+                'error'
+            )
         }
     }
+
+
 
     render() {
         const { classes } = this.props;

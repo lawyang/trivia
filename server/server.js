@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //   });
 
 /* Routes */
-app.use('/api', questionsRouter);
+// app.use('/api', questionsRouter);
 // app.use('/api/resources', resourceRouter);
 // app.use('/api/articles', articleRouter);
 // app.use('/api/profiles', profileRouter);

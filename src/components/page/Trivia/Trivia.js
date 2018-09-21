@@ -86,7 +86,7 @@ class Trivia extends Component {
             console.log('Wrong');
             Swal(
                 'Incorrect',
-                'Sorry Try Again',
+                '',
                 'error'
             )
         }

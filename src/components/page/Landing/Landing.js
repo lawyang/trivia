@@ -17,7 +17,7 @@ class Landing extends Component {
     render() {
         return(
             <div>
-                <p>NexTech Trivia</p>
+                <p>Contact Information</p>
             </div>
         )
     }

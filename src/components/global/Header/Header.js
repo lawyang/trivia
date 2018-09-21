@@ -1,24 +1,10 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Landing from '../../page/Landing/Landing';
-
-function TabContainer(props) {
-  return (
-    <Typography component="div" style={{ padding: 8 * 3 }}>
-      {props.children}
-    </Typography>
-  );
-}
-
-TabContainer.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+// import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom'
 
 const styles = theme => ({
   root: {
@@ -37,6 +23,7 @@ class Header extends Component {
   };
 
   render() {
+
     const { classes } = this.props;
     const { value } = this.state;
 
@@ -44,21 +31,13 @@ class Header extends Component {
       <div className={classes.root}>
         <AppBar position="static">
           <Tabs value={value} onChange={this.handleChange}>
-            <Tab value="home" label="Home" />
-            <Tab value="two" label="Item Two" />
-            <Tab value="three" label="Item Three" />
+            <Tab value="trivia" label="Trivia" component={Link} to="/trivia"> Trivia </Tab>
+            <Tab value="contact" label="Contact" component={Link} to="/contact"> Contact </Tab>
           </Tabs>
         </AppBar>
-        {/* {value === 'home' && <TabContainer> <Landing /></TabContainer>} */}
-        {value === 'two' && <TabContainer>About</TabContainer>}
-        {value === 'three' && <TabContainer>Contact</TabContainer>}
       </div>
     );
   }
 }
-
-Header.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
 export default withStyles(styles)(Header);

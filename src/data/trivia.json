@@ -15,11 +15,11 @@
         "question": "The purpose of an evaporator in the refrigeration cycle is to _____.",
         "answers": {
             "a": "Add moisture into the air",
-            "b": "Transfer heat from indooe air to the cold refrigerant",
+            "b": "Transfer heat from indoor air to the cold refrigerant",
             "c": "transfer heat to the outdoors",
             "d": "provide a pressure drop"
         },
-        "value": "Transfer heat from indooe air to the cold refrigerant"
+        "value": "Transfer heat from indoor air to the cold refrigerant"
     },
     {
         "id": 3,

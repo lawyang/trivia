@@ -39,11 +39,11 @@ class App extends Component {
               <Header />
                 <Switch>
                   <Redirect exact from="/" to="/trivia" />
-                  {/* <Route 
-                    path="/home"
+                  <Route 
+                    path="/contact"
                     component={Landing}
                     className='appFrame'
-                  /> */}
+                  />
                   <Route 
                     path="/trivia"
                     component={Trivia}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TRIVIA_ACTIONS } from '../../../redux/actions/triviaActions';
+// import { TRIVIA_ACTIONS } from '../../../redux/actions/triviaActions';
 // import { connect } from 'react-redux';
 import { connect } from 'react-redux';
 import data from '../../../data/trivia.json';
@@ -47,13 +47,12 @@ class Trivia extends Component {
     questions = [];
 
     filterData = () => {
-        // let id = this.state.ids;
         let number = this.getRndInteger(this.state.ids, this.state.length+1);
         let id = number;
         console.log('id:',id)
         this.questions = this.state.ques.filter(function (question) {
             return(
-                question.id === parseInt(`${id}`)
+                question.id === parseInt(`${id}`, 10)
             );
         });
     }

@@ -9,11 +9,9 @@ import { withStyles } from '@material-ui/core/styles';
 import { compose } from 'redux';
 import Typography from '@material-ui/core/Typography';
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-import {Animated} from "react-animated-css";
 
 const mapStateToProps = state => ({
-    object: state.triviaReducer.allQuestions
+    // object: state.triviaReducer.allQuestions
 })
 
 const styles = theme => ({
@@ -25,12 +23,6 @@ const styles = theme => ({
           
       }
   });
-
-  const SwalWithBootstrapButtons = Swal.mixin({
-    confirmButtonClass: 'btn btn-success',
-    cancelButtonClass: 'btn btn-danger',
-    buttonsStyling: false,
-  })
 
 class Trivia extends Component {
     constructor() {

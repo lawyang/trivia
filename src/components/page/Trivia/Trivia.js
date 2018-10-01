@@ -45,7 +45,7 @@ class Trivia extends Component {
     filterData = () => {
         let number = this.getRndInteger(this.state.ids, this.state.length+1);
         let id = number;
-        console.log('id:',id)
+        // console.log('idasdf:',id, 'length:', number)
         this.questions = this.state.ques.filter(function (question) {
             return(
                 question.id === parseInt(`${id}`, 10)

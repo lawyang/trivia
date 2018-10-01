@@ -64,7 +64,8 @@
             "d": "Safety does not normally require training"
         },
         "value": "Safety is a learned behavior and attitude"
-    },    {
+    },    
+    {
         "id": 7,
         "question": "What type of material is typically used for flue pipes on condensing furnaces?",
         "answers": {
@@ -74,7 +75,8 @@
             "d": "High Density Foam"
         },
         "value": "PVC"
-    },    {
+    },    
+    {
         "id": 8,
         "question": "What are some identifying components that are unique to a heat pump system?",
         "answers": {
@@ -84,7 +86,8 @@
             "d": "Outdoor coil"
         },
         "value": "Reversing valve and accumulator"
-    },    {
+    },    
+    {
         "id": 9,
         "question": "The temperature at which a liquid or gas changes state is dependent upon the ______.",
         "answers": {
@@ -94,7 +97,8 @@
             "d": "Sensible heat"
         },
         "value": "pressure"
-    },    {
+    },    
+    {
         "id": 10,
         "question": "A register is __________.",
         "answers": {
@@ -104,5 +108,137 @@
             "d": "the metal duct supplying return air to the equipment "
         },
         "value": "an outlet that discharges supply air into a room"
+    },    
+    {
+        "id": 11,
+        "question": "Which material can corrode to the point of clogging the line?",
+        "answers": {
+            "a": "Copper",
+            "b": "PEX",
+            "c": "CPVC",
+            "d": "Galvanized Steel"
+        },
+        "value": "Galvanized Steel"
+    },    
+    {
+        "id": 12,
+        "question": "Of the main fuels used for sweating, which burns the coolest?",
+        "answers": {
+            "a": "Propane",
+            "b": "MAPP",
+            "c": "Acetylene",
+            "d": "Methane"
+        },
+        "value": "Propane"
+    },    
+    {
+        "id": 13,
+        "question": "Which is the only secondary line that receives solid or semi-solid waste?",
+        "answers": {
+            "a": "A main line",
+            "b": "A shower line",
+            "c": "A floor drain line",
+            "d": "A kitchen line"
+        },
+        "value": "A kitchen line"
+    },    
+    {
+        "id": 14,
+        "question": "If a water-lubricated pump is not run in water, it will burn out the?",
+        "answers": {
+            "a": "Control Circuits",
+            "b": "Impeller",
+            "c": "Backup Battery",
+            "d": "Pump Bearings"
+        },
+        "value": "Pump Bearings"
+    },    
+    {
+        "id": 15,
+        "question": "When conducting an air test on a water system, the exact pressure required is?",
+        "answers": {
+            "a": "Dictated by local code",
+            "b": "Specified by the pump manufacturer",
+            "c": "1-1/2 times the normal water pressure",
+            "d": "Calculated by the project engineer"
+        },
+        "value": "Dictated by local code"
+    },    
+    {
+        "id": 16,
+        "question": "In a roof drain system, an expansion joint is __________.",
+        "answers": {
+            "a": "Seldom required",
+            "b": "Installed in the horizontal storm water piping",
+            "c": "Installed in the vertical pipe beneath the drain body",
+            "d": "Mandated by code"
+        },
+        "value": "Installed in the vertical pipe beneath the drain body"
+    },    
+    {
+        "id": 17,
+        "question": "A test used mainly to locate leaks that are difficult to find is the __________.",
+        "answers": {
+            "a": "Air test",
+            "b": "Water test",
+            "c": "Oil test",
+            "d": "Smoke test"
+        },
+        "value": "Smoke test"
+    },    
+    {
+        "id": 18,
+        "question": "As a group, the common methods of modifying structural members can be referred to as ______?",
+        "answers": {
+            "a": "The center third",
+            "b": "The upper third",
+            "c": "Near neather end",
+            "d": "The lower edge"
+        },
+        "value": "The center third"
+    },    
+    {
+        "id": 19,
+        "question": "The thermal radiation emmited by an object can be measured by a(n) _________.",
+        "answers": {
+            "a": "Bimetallic thermometer",
+            "b": "Infrared thermometer",
+            "c": "Liquid thermometer",
+            "d": "Electrical thermometer"
+        },
+        "value": "Infrared thermometer"
+    },    
+    {
+        "id": 20,
+        "question": "To protect against corrosion and oxidation, galvanized piping is electroplated with a coating of __________.",
+        "answers": {
+            "a": "Lead",
+            "b": "Zinc",
+            "c": "Copper",
+            "d": "Magnesium"
+        },
+        "value": "Zinc"
+    },    
+    {
+        "id": 21,
+        "question": "When is the launch date of the NEXTECH HVAC program?",
+        "answers": {
+            "a": "August 6, 2018",
+            "b": "September 7, 2018",
+            "c": "December 15, 2018",
+            "d": "May 12, 2018"
+        },
+        "value": "August 6, 2018"
+    },    
+    {
+        "id": 22,
+        "question": "When is the launch date of the NEXTECH Plumbing program?",
+        "answers": {
+            "a": "October 21, 2018",
+            "b": "April 10, 2018",
+            "c": "November 16, 2018",
+            "d": "May 7, 2018"
+        },
+        "value": "May 7, 2018"
     }
 ]

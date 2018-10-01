@@ -1,1 +1,1 @@
-# Simple 10 question industrial construction trivia test
+# Simple 20 question trivia app

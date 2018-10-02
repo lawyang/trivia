@@ -169,11 +169,11 @@
         "question": "The purpose of a trap primer is to?",
         "answers": {
             "a": "Keep water flowing through the trap",
-            "b": "Periodically add water to the tap",
+            "b": "Periodically add water to the trap",
             "c": "Break the trap seal",
             "d": "Keep the trap from clogging"
         },
-        "value": "Periodically add water to the tap"
+        "value": "Periodically add water to the trap"
     },    
     {
         "id": 17,

@@ -80,7 +80,9 @@ class Trivia extends Component {
                 'Incorrect',
                 '',
                 'error'
-            )
+            ).then(()=>{
+                window.location.reload();
+            })
         }
     }
 

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "question": "Which of these fuels is the most commonly used heating fuel?",
+        "question": "Which of these fuels is the most commonly used heating fossil fuel?",
         "answers": {
             "a": "Kerosene",
             "b": "Coal",
@@ -199,18 +199,18 @@
     },    
     {
         "id": 19,
-        "question": "The National Electrical Code (NEC) si published by?",
+        "question": "The National Electrical Code (NEC) is published by?",
         "answers": {
             "a": "The National Institute of Standards and Technology",
             "b": "The National Fire Protection Association",
             "c": "The International Code Council",
             "d": "The National Electrical Contractors' Association"
         },
-        "value": "he National Fire Protection Association"
+        "value": "The National Fire Protection Association"
     },    
     {
         "id": 20,
-        "question": "Which material can corrode to the point of clogging the line",
+        "question": "Which material can corrode to the point of clogging the line?",
         "answers": {
             "a": "Copper",
             "b": "PEX",

@@ -86,10 +86,11 @@ class Trivia extends Component {
 
     render() {
         const { classes } = this.props;
+
         return(
             <div>
                 <br/>
-                <div>
+                <div class="question">
                     {this.state.items.map((que, index)=>{
                         return (
                             <Typography 
@@ -98,38 +99,47 @@ class Trivia extends Component {
                             variant="headline"
                             value={que.id}>{que.question}</Typography>
                         )}
-                    )}
+                    )} 
                     {this.questions.map((item, index)=>{
                         return (
-                            <div key={index}>
-                                <Button value={item.id} 
-                                variant="outlined" 
-                                color="primary" 
-                                classes={{ root: classes.button }} 
-                                onClick={()=>this.checkAnswer(item.answers.a)}>{item.answers.a}</Button>
-                                <br/>
-                                <Button 
-                                value={item.id} 
-                                variant="outlined" 
-                                size="large" 
-                                color="primary" 
-                                classes={{ root: classes.button }} 
-                                onClick={()=>this.checkAnswer(item.answers.b)}>{item.answers.b}</Button>
-                                <br/>
-                                <Button 
-                                value={item.id} 
-                                variant="outlined" 
-                                size="large" 
-                                color="primary" 
-                                classes={{ root: classes.button }} 
-                                onClick={()=>this.checkAnswer(item.answers.c)}>{item.answers.c}</Button>
-                                <br/>
-                                <Button value={item.id} 
-                                variant="outlined" 
-                                size="large" 
-                                color="primary" 
-                                classes={{ root: classes.button }} 
-                                onClick={()=>this.checkAnswer(item.answers.d)}>{item.answers.d}</Button>
+                            <div key={index} class="grid-container">
+                                <div class="option">
+                                    <Button value={item.id} 
+                                    variant="default"
+                                    size="large"
+                                    color="primary" 
+                                    classes={{ root: classes.button }} 
+                                    onClick={()=>this.checkAnswer(item.answers.a)}>{item.answers.a}</Button>
+                                </div>
+                                <div class="option2">
+                                    {/* <br/> */}
+                                    <Button 
+                                    value={item.id} 
+                                    variant="default" 
+                                    size="large" 
+                                    color="primary" 
+                                    classes={{ root: classes.button }} 
+                                    onClick={()=>this.checkAnswer(item.answers.b)}>{item.answers.b}</Button>
+                                    {/* <br/> */}
+                                </div>
+                                <div class="option3">
+                                    <Button 
+                                    value={item.id} 
+                                    variant="default" 
+                                    size="large" 
+                                    color="primary" 
+                                    classes={{ root: classes.button }} 
+                                    onClick={()=>this.checkAnswer(item.answers.c)}>{item.answers.c}</Button>
+                                </div>
+                                <div class="option4">
+                                    {/* <br/> */}
+                                    <Button value={item.id} 
+                                    variant="default" 
+                                    size="large" 
+                                    color="primary" 
+                                    classes={{ root: classes.button }} 
+                                    onClick={()=>this.checkAnswer(item.answers.d)}>{item.answers.d}</Button>
+                                </div>
                             </div>
                         )}
                     )}

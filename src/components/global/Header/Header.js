@@ -32,7 +32,7 @@ class Header extends Component {
         <AppBar position="static">
           <Tabs value={value} onChange={this.handleChange}>
             <Tab value="trivia" label="Trivia" component={Link} to="/trivia"> Trivia </Tab>
-            <Tab value="contact" label="Contact" component={Link} to="/contact"> Contact </Tab>
+            {/* <Tab value="contact" label="Contact" component={Link} to="/contact"> Contact </Tab> */}
           </Tabs>
         </AppBar>
       </div>

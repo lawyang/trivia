@@ -1,3 +1,25 @@
 .choices {
     width: 10 px
 }
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: ". question question ." ". option option2 ." ". option3 option4 ." ". . . .";
+  }
+  
+  .question { 
+    grid-area: question;
+    text-align: center; 
+    }
+  
+  .option { grid-area: option; }
+  
+  .option2 { grid-area: option2; }
+  
+  .option3 { grid-area: option3; }
+  
+  .option4 { grid-area: option4; }

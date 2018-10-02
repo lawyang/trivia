@@ -133,91 +133,91 @@
     },    
     {
         "id": 13,
-        "question": "Which is the only secondary line that receives solid or semi-solid waste?",
+        "question": "Which tool is best used on a clogged toilet?",
         "answers": {
-            "a": "A main line",
-            "b": "A shower line",
-            "c": "A floor drain line",
-            "d": "A kitchen line"
+            "a": "a small drain machine",
+            "b": "a medium drain machine",
+            "c": "a large drain machine",
+            "d": "a closet auger"
         },
-        "value": "A kitchen line"
+        "value": "a closet auger"
     },    
     {
         "id": 14,
-        "question": "If a water-lubricated pump is not run in water, it will burn out the?",
+        "question": "F.O.G. stands for?",
         "answers": {
-            "a": "Control Circuits",
-            "b": "Impeller",
-            "c": "Backup Battery",
-            "d": "Pump Bearings"
+            "a": "Fats, Odors, Grease",
+            "b": "Fats, Oil, Good",
+            "c": "Fants, Outlets, Grounds",
+            "d": "Fats, Oils, Grease"
         },
-        "value": "Pump Bearings"
+        "value": "Fats, Oils, Grease"
     },    
     {
         "id": 15,
-        "question": "When conducting an air test on a water system, the exact pressure required is?",
+        "question": "Which material is not a component in solder?",
         "answers": {
-            "a": "Dictated by local code",
-            "b": "Specified by the pump manufacturer",
-            "c": "1-1/2 times the normal water pressure",
-            "d": "Calculated by the project engineer"
+            "a": "Tin",
+            "b": "Silver",
+            "c": "Lead",
+            "d": "Nickel"
         },
-        "value": "Dictated by local code"
+        "value": "Lead"
     },    
     {
         "id": 16,
-        "question": "In a roof drain system, an expansion joint is __________.",
+        "question": "The purpose of a trap primer is to?",
         "answers": {
-            "a": "Seldom required",
-            "b": "Installed in the horizontal storm water piping",
-            "c": "Installed in the vertical pipe beneath the drain body",
-            "d": "Mandated by code"
+            "a": "Keep water flowing through the trap",
+            "b": "Periodically add water to the tap",
+            "c": "Break the trap seal",
+            "d": "Keep the trap from clogging"
         },
-        "value": "Installed in the vertical pipe beneath the drain body"
+        "value": "Periodically add water to the tap"
     },    
     {
         "id": 17,
-        "question": "A test used mainly to locate leaks that are difficult to find is the __________.",
+        "question": "When installing a shower, ensure that the drain is positioned at the correct height of?",
         "answers": {
-            "a": "Air test",
-            "b": "Water test",
-            "c": "Oil test",
-            "d": "Smoke test"
+            "a": "The unfinished shower floor",
+            "b": "The finished shower floor",
+            "c": "The top of the supporting beams",
+            "d": "Below the trap weir"
         },
-        "value": "Smoke test"
+        "value": "The finished shower floor"
     },    
     {
         "id": 18,
-        "question": "As a group, the common methods of modifying structural members can be referred to as ______?",
+        "question": "Which two types of tests may be used to ensure that water supply piping is free of leaks?",
         "answers": {
-            "a": "The center third",
-            "b": "The upper third",
-            "c": "Near neather end",
-            "d": "The lower edge"
+            "a": "Air and hydrostatic",
+            "b": "Peppermint and smoke",
+            "c": "Smoke and hydrostatic",
+            "d": "Air and peppermint"
         },
-        "value": "The center third"
+        "value": "Air and hydrostatic"
     },    
     {
         "id": 19,
-        "question": "The thermal radiation emmited by an object can be measured by a(n) _________.",
+        "question": "The National Electrical Code (NEC) si published by?",
         "answers": {
-            "a": "Bimetallic thermometer",
-            "b": "Infrared thermometer",
-            "c": "Liquid thermometer",
-            "d": "Electrical thermometer"
+            "a": "The National Institute of Standards and Technology",
+            "b": "The National Fire Protection Association",
+            "c": "The International Code Council",
+            "d": "The National Electrical Contractors' Association"
         },
-        "value": "Infrared thermometer"
+        "value": "he National Fire Protection Association"
     },    
     {
         "id": 20,
-        "question": "To protect against corrosion and oxidation, galvanized piping is electroplated with a coating of __________.",
+        "question": "Which material can corrode to the point of clogging the line",
         "answers": {
-            "a": "Lead",
-            "b": "Zinc",
-            "c": "Copper",
-            "d": "Magnesium"
+            "a": "Copper",
+            "b": "PEX",
+            "c": "CPVC",
+            "d": "Galvanized Steel"
         },
-        "value": "Zinc"
+        "value": "Galvanized Steel"
     },    
     {
         "id": 21,
